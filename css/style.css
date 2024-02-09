@@ -200,6 +200,8 @@ section h2 {
 }
 
 .input {
+	background-color: hsl(var(--muted));
+	color: hsl(var(--foreground));
 	padding: 1rem;
 	border: 2px solid hsl(var(--muted));
 	border-radius: var(--radius);
@@ -208,6 +210,10 @@ section h2 {
 	font-weight: 600;
 	width: 60%;
 	margin: 0 auto;
+}
+
+::placeholder {
+	color: hsl(var(--muted-foreground));
 }
 
 input[type="submit"] {
@@ -258,6 +264,10 @@ input[type="submit"]:hover {
 	line-height: 1.75rem;
 	scroll-margin: 5rem;
 	color: hsl(var(--foreground));
+}
+
+footer {
+	text-align: center;
 }
 
 @media (max-width: 1024px) {
